@@ -27,4 +27,6 @@ public class TestJunit {
 	      assertEquals(2,myClass.getFactorial(2));
 	      assertEquals(6,myClass.getFactorial(3));
 	   }
+	   
+	   //Enter your factorial test function here
 	}
