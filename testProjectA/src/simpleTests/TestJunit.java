@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class TestJunit {
 	
-	   String message = "Hello World";	
+	   String message = "Hello World123";	
 	   ExampleClass myClass = new ExampleClass(message);
 
 	   @Before
@@ -22,7 +22,7 @@ public class TestJunit {
 	   
 	   @Test
 	   public void testFib() {	  
-		   assertEquals(1,myClass.getFactorial(0));
+		   assertEquals(-1,myClass.getFactorial(0));
 	      assertEquals(1,myClass.getFactorial(1));
 	      assertEquals(2,myClass.getFactorial(2));
 	      assertEquals(6,myClass.getFactorial(3));

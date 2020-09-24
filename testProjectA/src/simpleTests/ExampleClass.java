@@ -4,7 +4,7 @@ package simpleTests;
 public class ExampleClass {
 	
 	//Return the factorial of n
-    int getFactorial(int n) {
+    public int getFactorial(int n) {
 	if(n==0){
 		return 1; 
 	}
@@ -18,7 +18,11 @@ public class ExampleClass {
     }
     
 	//Return the nth Fibonacci number
-    int getFib(int n) {
+    public int getFib(int n) {
+    	if(n<1) {
+    		throw new IllegalArgumentException("Value too big (" + n + ")");
+    	}
+    	n-=1;
         int a = 0, b = 1, c; 
         if (n == 0) 
             return a; 
@@ -42,6 +46,6 @@ public class ExampleClass {
    // prints the message
    public String printMessage(){
       System.out.println(message);
-      return message;
+      return "123";
    }   
 } 
