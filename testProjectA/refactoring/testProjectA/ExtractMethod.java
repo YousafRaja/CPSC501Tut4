@@ -7,10 +7,14 @@ public class ExtractMethod {
 	public void printOwing() {
 		  String name = "John";
 		  printBanner();
-		  // Print details.
-		  System.out.println("name: " + name);
-		  System.out.println("amount: " + getOutstanding());
+		  
+		  printDetails(getOutstanding(), name);
 		}
+	
+	public void printDetails(String outstanding, String name) {
+		  System.out.println("name: " + name);
+		  System.out.println("amount: " + outstanding);
+	}
 	
 	private String getOutstanding() {
 		return "1000";

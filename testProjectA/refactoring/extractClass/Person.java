@@ -1,12 +1,13 @@
 package extractClass;
 
+import testProjectA.ExtractMethod;
+
 public class Person {
 	String name;
-	int officeAreaCode;
-	String officeNumber;
+	TelephoneNumber telephoneNumber= new TelephoneNumber();
 	
-	public String getTelephoneNumber() {
-		return officeNumber;
+	public void getNumber() {
+		telephoneNumber.getTelephoneNumber();
 	}
 	
 }
