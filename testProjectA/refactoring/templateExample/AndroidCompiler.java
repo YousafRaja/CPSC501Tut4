@@ -1,11 +1,11 @@
 package templateExample;
 
 public class AndroidCompiler extends CrossCompiler {
-	protected void collectAndroidSource() {
+	protected void collectSource() {
 		System.out.println("Android source ready");
 	}
 	
-	protected void compileToAndroidTarget() {
+	protected void compileToTarget() {
 		System.out.println("Android compiled");
 	}
 }
