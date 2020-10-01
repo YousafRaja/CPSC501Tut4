@@ -6,8 +6,8 @@ public class Person {
 	String name;
 	TelephoneNumber telephoneNumber= new TelephoneNumber();
 	
-	public void getNumber() {
-		telephoneNumber.getTelephoneNumber();
+	public String getNumber() {
+		return telephoneNumber.getTelephoneNumber();
 	}
 	
 }
